@@ -1,0 +1,76 @@
+# baseurl = "https://blog.session.it/open-developer-platform"
+baseurl = "https://localhost:1313/open-developer-platform"
+
+languageCode = "en-us"
+title = "Open Developer Platform documentation"
+theme = "material"
+metadataformat = "yaml"
+canonifyurls = true
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+# Generate HTML in the docs folder
+publishDir = "docs"
+
+[params]
+	# General information
+	author = "Symphony Software Foundation"
+	description = "Open Developer Platform documentation."
+	copyright = "Released under the Apache 2.0 license"
+
+	# Repository
+	provider = "GitHub"
+	repo_url = "https://github.com/maoo/open-developer-platform"
+
+	# version = "0.9.0"
+	logo = "/SymphonyFoundationSymbol.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "grey"
+    	accent  = "teal"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = "symphonyOSS"
+	github  = "symphonyoss"
+	# email   = "infra@symphony.foundation"
+
+[[menu.main]]
+	name   = "Welcome to ODP"
+	url    = "/"
+	weight = 0
+
+[[menu.main]]
+	name   = "Why ODP"
+	url    = "why-odp/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Request access"
+	url    = "request-access/"
+	weight = 30
+
+[[menu.main]]
+	name   = "Resources"
+	url    = "resources/"
+	weight = 40
+
+[[menu.main]]
+	name   = "Project infrastructure"
+	url    = "project-infrastructure/"
+	weight = 50
