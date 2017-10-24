@@ -1,0 +1,48 @@
+---
+date: 2017-07-20T00:11:02+01:00
+title: Clojure
+type: index
+weight: 130
+---
+
+Clojure is a dialect of the Lisp programming language that runs on the Java virtual machine, Common Language Runtime, and JavaScript engines; the Symphony Software Foundation hosts some Clojure projects that can be browsed as examples.
+Clojure code can be built and distributed using different build tools, but Leiningen is recommended.  The deployable unit for Leiningen projects is a JAR file and matching POM, which means that Clojure projects can be deployed to any Maven repository.
+Wherever appropriate, the Foundation recommends following the deployment rules for Java (artifact naming and versioning, in particular).
+
+## Artifact Publishing
+All Clojure project hosted by the Foundation are expected to use a `groupId` that is (or prefixed by) `org.symphonyoss`.
+
+By default Leiningen deploys to [Clojars](https://clojars.org/), but you may choose any Maven repository you wish ([Maven Central](https://symphonyoss.atlassian.net/wiki/search.maven.org/#search%7Cga%7C1%7Corg.symphonyoss) for example); in both cases, the Foundation manages the lifecycle of all packages that are published with org.symphonyoss groupId and publishes the list of artifacts:
+- [`org.symphonyoss` on Clojars](https://clojars.org/groups/org.symphonyoss)
+- [`org.symphonyoss` on Maven Central](http://search.maven.org/#search%7Cga%7C1%7Corg.symphonyoss)
+
+As a committer, you can follow these instructions in order to publish your Clojure artifacts to Clojars.
+Sign up on [clojars.org](https://clojars.org)
+2. [Create an ODP Enable CI issue]() using the following JIRA description template (we use this information to enable you to deploy to the `org.symphonyoss` `groupId` on Clojars):
+```
+
+h4. Project coordinates
+<_github project url and other useful info_>
+   
+h4. Clojars username
+<_The username created on step #1 that grants you access to https://clojars.org_>
+```
+
+3. Configure [leiningen's deploy plugin](https://github.com/technomancy/leiningen/blob/master/doc/DEPLOY.md) in your project, and run `lein deploy` to create an initial release from your local workstation.
+
+### Badges
+
+Badges can be added at the top of the project's root-level `README.md` file, using the following Markdown syntax:
+
+- [![Clojars Project](https://img.shields.io/clojars/v/org.symphonyoss/clj-symphony.svg)](https://clojars.org/org.symphonyoss/clj-symphony)
+```
+[![Clojars Project](https://img.shields.io/clojars/v/org.symphonyoss/clj-symphony.svg)](https://clojars.org/org.symphonyoss/clj-symphony)
+```
+
+- [![Maven Central](https://img.shields.io/maven-central/v/org.symphonyoss/symphonyoss.svg?maxAge=2592000)](http://search.maven.org/#artifactdetails%7Corg.symphonyoss%7Csymphonyoss%7C2%7Cpom)
+```
+[![Maven Central](https://img.shields.io/maven-central/v/org.symphonyoss/symphonyoss.svg?maxAge=2592000)](http://search.maven.org/#artifactdetails%7Corg.symphonyoss%7Csymphonyoss%7C2%7Cpom)
+```
+
+## Continuous Integration
+Check [Travis CI support for Clojure](https://docs.travis-ci.com/user/languages/clojure/) in order to run build, test and deployment processes periodically or on commit.  A worked example (`[.travis.yml](https://github.com/symphonyoss/clj-symphony/blob/master/.travis.yml)`, `[project.clj](https://github.com/symphonyoss/clj-symphony/blob/master/project.clj)`) is available in the [clj-symphony project](https://github.com/symphonyoss/clj-symphony).

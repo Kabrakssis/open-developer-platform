@@ -2,7 +2,7 @@
 date: 2017-07-20T00:11:02+01:00
 title: Resources
 type: index
-weight: 30
+weight: 70
 ---
 
 ## 5 minutes intro

@@ -1,15 +1,16 @@
 ---
 date: 2017-07-20T00:11:02+01:00
-title: Request access
+title: Getting started
 type: index
 weight: 20
 ---
 
+...
+
+## Requesting access
 Permanent access to the ODP is available to all approved committers on Foundation-hosted open source projects, for as long as those committers are engaged with a project.  If you have a new project that's in the [process of being contributed](https://symphonyoss.atlassian.net/wiki/spaces/FM/pages/62783509/Contribution), you can indicate in your [Project Contribution JIRA](https://symphonyoss.atlassian.net/projects/CONTRIB/issues/) that you'd like ODP access, and we will provision that as part of the contribution process.
 
 The Foundation also provides temporary access to the ODP for some Foundation-sponsored coding events (hackathons, innovation challenges, and the like).  In these cases, the specifics of both eligibility and the duration that access will be provided will be described in the details of the event.
-
-## Requesting access
 
 ### New committer on existing project
 If you have just become a committer on an existing Foundation-hosted open source project, you should request that the project lead [create a new issue in JIRA](https://symphonyoss.atlassian.net/secure/CreateIssue.jspa?pid=10400&issuetype=10300) on your behalf, as follows:

@@ -51,26 +51,101 @@ publishDir = "docs"
 	# email   = "infra@symphony.foundation"
 
 [[menu.main]]
-	name   = "Welcome to ODP"
-	url    = "/"
-	weight = 0
-
-[[menu.main]]
 	name   = "Why ODP"
 	url    = "why-odp/"
 	weight = 20
 
 [[menu.main]]
-	name   = "Request access"
-	url    = "request-access/"
+	name   = "Getting started"
+	url    = "getting-started/"
 	weight = 30
-
-[[menu.main]]
-	name   = "Resources"
-	url    = "resources/"
-	weight = 40
 
 [[menu.main]]
 	name   = "Project infrastructure"
 	url    = "project-infrastructure/"
 	weight = 50
+
+[[menu.main]]
+	name   = "Continuous Integration"
+	url    = "project-infrastructure/continuous-integration/"
+	weight = 80
+
+[[menu.main]]
+	name   = "Documentation"
+	url    = "project-infrastructure/documentation/"
+	weight = 90
+
+[[menu.main]]
+	name   = "Languages"
+	url    = "project-infrastructure/languages/"
+	weight = 100
+
+[[menu.main]]
+	name   = "C#"
+	url    = "project-infrastructure/languages/c-sharp/"
+	weight = 120
+
+[[menu.main]]
+	name   = "Clojure"
+	url    = "project-infrastructure/languages/clojure/"
+	weight = 130
+
+[[menu.main]]
+	name   = "Java"
+	url    = "project-infrastructure/languages/java/"
+	weight = 140
+
+[[menu.main]]
+	name   = "Javascript"
+	url    = "project-infrastructure/languages/javascript/"
+	weight = 150
+
+[[menu.main]]
+	name   = "Python"
+	url    = "project-infrastructure/languages/python/"
+	weight = 160
+
+[[menu.main]]
+	name   = "Reporting"
+	url    = "project-infrastructure/reporting/"
+	weight = 110
+
+[[menu.main]]
+	name   = "BitHound"
+	url    = "project-infrastructure/reporting/bithound/"
+	weight = 170
+
+[[menu.main]]
+	name   = "CodeClimate"
+	url    = "project-infrastructure/reporting/codeclimate/"
+	weight = 180
+
+[[menu.main]]
+	name   = "Coverity Scan"
+	url    = "project-infrastructure/reporting/coverityscan/"
+	weight = 190
+
+[[menu.main]]
+	name   = "NodeSecurity"
+	url    = "project-infrastructure/reporting/nodesecurity/"
+	weight = 200
+
+[[menu.main]]
+	name   = "SonarCloud"
+	url    = "project-infrastructure/reporting/sonarcloud/"
+	weight = 210
+
+[[menu.main]]
+	name   = "VersionEye"
+	url    = "project-infrastructure/reporting/versioneye/"
+	weight = 220
+
+[[menu.main]]
+	name   = "Technologies"
+	url    = "technologies/"
+	weight = 60
+
+[[menu.main]]
+	name   = "Resources"
+	url    = "resources/"
+	weight = 70
