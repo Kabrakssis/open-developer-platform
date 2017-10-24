@@ -10,6 +10,6 @@ This project contains the source code of https://blog.session.it/open-developer-
 brew install hugo
 git clone git@github.com:maoo/open-developer-platform.git
 cd open-developer-platform
-git submodule add git@github.com:digitalcraftsman/hugo-material-docs.git themes/material
+git submodule add https://github.com/digitalcraftsman/hugo-material-docs themes/material
 hugo serve
 ```
