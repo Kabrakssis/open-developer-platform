@@ -3,7 +3,7 @@ baseurl = "https://localhost:1313/open-developer-platform"
 
 languageCode = "en-us"
 title = "Open Developer Platform documentation"
-theme = "material"
+theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
 
